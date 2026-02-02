@@ -1,0 +1,92 @@
+{
+    "version": 5,
+    "entities": [
+        {
+            "id": "a7c372e0-3fc6-4013-8dce-ea07549fb28e",
+            "name": "Mazeblock_temp",
+            "components": [
+                {
+                    "data": {
+                        "class": "horizon::platform_api::TransformPlatformComponent",
+                        "version": 2,
+                        "data": {
+                            "localPosition": {
+                                "x": 33.052001953125,
+                                "y": 0.0,
+                                "z": 106.84619140625
+                            },
+                            "localRotation": {
+                                "x": -0.0,
+                                "y": 0.0,
+                                "z": 0.0
+                            },
+                            "localScale": {
+                                "x": 13.0,
+                                "y": 1.0,
+                                "z": 13.0
+                            }
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::MeshPlatformComponent",
+                        "version": 11,
+                        "data": {
+                            "mesh": {
+                                "packageOrRemoteId": "24407058055595655",
+                                "ingestionId": "4707432788469128401",
+                                "targetId": 931111888
+                            }
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::ColliderBoxPlatformComponent",
+                        "version": 1,
+                        "data": {}
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::PhysicsBodyPlatformComponent",
+                        "version": 6,
+                        "data": {
+                            "type": "StaticCollision"
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::MaterialPlatformComponent",
+                        "version": 1,
+                        "data": {
+                            "materials": [
+                                {
+                                    "packageOrRemoteId": "8005784934535184543",
+                                    "ingestionId": "12320935892869685488",
+                                    "targetId": 157013062
+                                }
+                            ]
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                }
+            ],
+            "attributes": [
+                {
+                    "class": "horizon::NetworkableTemplateEntityAttribute",
+                    "data": {
+                        "isNetworkable": true
+                    }
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}

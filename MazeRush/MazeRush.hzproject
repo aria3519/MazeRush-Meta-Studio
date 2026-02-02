@@ -1,5 +1,5 @@
 {
-    "id": "c858fd91-3c1a-41c9-a12a-3f6884ff45e6",
+    "id": "328b48e8-8a35-4cbf-b0cc-8e42d7c99689",
     "defaultTemplateAssetId": {
         "packageOrRemoteId": "8005784934535184543",
         "ingestionId": "12749328776617464504",
@@ -8,7 +8,7 @@
     "organizationId": "762875550252531",
     "organizationName": "KwonMinJae's team",
     "organizationScope": "kwonminjaesteam",
-    "worldId": "25894758880143540",
+    "worldId": "25594676310196527",
     "collisionLayers": [
         "Player",
         "World",

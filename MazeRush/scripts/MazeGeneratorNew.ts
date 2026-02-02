@@ -131,40 +131,40 @@ export class MazeGeneratorNew extends Component {
     this.runSetup();
   }
 
-  @subscribe(OnWorldUpdateEvent)
-  onUpdate(params: OnWorldUpdateEventPayload) 
-  {
+  // @subscribe(OnWorldUpdateEvent)
+  // onUpdate(params: OnWorldUpdateEventPayload) 
+  // {
    
-    this.time += params.deltaTime ;
-    console.log("change All"+this.time)
-    const children = this.mazeBlock?.getChildren();
-    let index =0;
-    if(this.time > 3)
-    {
-      this.time =0;
-      console.log("change All")
-       for (let x = 0; x < this.width; x++) {
-      for (let y = 0; y < this.height; y++) {
+  //   this.time += params.deltaTime ;
+  //   console.log("change All"+this.time)
+  //   const children = this.mazeBlock?.getChildren();
+  //   let index =0;
+  //   if(this.time > 3)
+  //   {
+  //     this.time =0;
+  //     console.log("change All")
+  //      for (let x = 0; x < this.width; x++) {
+  //     for (let y = 0; y < this.height; y++) {
 
-         const child = children[index].getComponent(MeshComponent);
-        //const childTrans = children[index].getComponent(TransformComponent);
-        const childcol = children[index].getComponent(PhysicsBodyComponent);
-        index++;
+  //        const child = children[index].getComponent(MeshComponent);
+  //       //const childTrans = children[index].getComponent(TransformComponent);
+  //       const childcol = children[index].getComponent(PhysicsBodyComponent);
+  //       index++;
 
-        if(child)
-        {
-          if(child.isVisibleSelf) child.isVisibleSelf = false;
-          else child.isVisibleSelf = true;
+  //       if(child)
+  //       {
+  //         if(child.isVisibleSelf) child.isVisibleSelf = false;
+  //         else child.isVisibleSelf = true;
 
-        }
+  //       }
 
       
-      }
-    }
+  //     }
+  //   }
 
-    }
+  //   }
 
-  }
+  // }
 
 
 

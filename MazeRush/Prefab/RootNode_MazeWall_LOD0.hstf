@@ -1,0 +1,71 @@
+{
+    "version": 5,
+    "entities": [
+        {
+            "id": "8c67e4fc-8c90-49f4-932e-d8c3e3269d67",
+            "name": "RootNode_MazeWall_LOD0",
+            "type": {
+                "packageOrRemoteId": "8005784934535184543",
+                "ingestionId": "15836499714154835797",
+                "targetId": 2719744159
+            },
+            "deltas": [
+                {
+                    "sourceId": "1582258e-83b1-f3fc-4777-492ab3dbf271",
+                    "components": [
+                        {
+                            "dataType": "horizon::DataDefinitionAsset",
+                            "data": {
+                                "class": "horizon::platform_api::TransformPlatformComponent",
+                                "version": 2,
+                                "data": {
+                                    "localPosition": {
+                                        "x": -2.1015939712524416,
+                                        "y": -7.816470315447077e-8,
+                                        "z": 11.115757942199707
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "dataType": "horizon::DataDefinitionAsset",
+                            "data": {
+                                "class": "horizon::platform_api::MaterialPlatformComponent",
+                                "version": 1,
+                                "data": {
+                                    "materials": [
+                                        {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "15328934161157081353",
+                                            "targetId": 157013062
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "dataType": "horizon::NetworkableTemplateEntityAttribute",
+                            "data": {
+                                "class": "horizon::NetworkableTemplateEntityAttribute",
+                                "data": {
+                                    "isNetworkable": true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "attributes": [
+                {
+                    "class": "horizon::NetworkableTemplateEntityAttribute",
+                    "data": {
+                        "isNetworkable": true
+                    }
+                }
+            ]
+        }
+    ],
+    "relationships": []
+}
