@@ -1,0 +1,50 @@
+
+BEGIN_PROPERTIES
+
+  // UV controls
+  uvTilingOffset("UV Tiling", Vector2) = (1.0, 1.0)
+
+  // Base Color texture input
+  baseColorTex("Color", 2D) = "white"
+
+  // ORM texture input and controls
+  occlusionRoughnessMetalnessTex("ORM texture", 2D) = "orm"
+  [Slider(0,1,0.1)]occlusionAmount("Occlusion", Float) = 0.5
+  [Slider(0,1,0.1)]roughnessAmount("Roughness", Float) = 0.5
+  [Slider(0,1,0.1)]metalnessAmount("Metalness", Float) = 0.5
+
+  // Normal Mapping
+  [BeginGroup("Normal Mapping", 2)]
+    normalTex("Normal Texture", 2D) = "normal"
+    [Slider(0,2,0.1)]normalStrength("Normal", Float) = 1.0
+  [EndGroup]
+
+END_PROPERTIES
+
+BEGIN_SURFACE
+
+// ----------------------------------------------------------------------------
+void surfaceFunction(inout Surface s, inout SurfaceData d)
+{
+
+  // Calculate modified UVs for textures
+  vec2 uv = d.texcoord0 * matParams.uvTilingOffset.xy;
+
+  // Sample Base Color from texture
+  vec4 color = texture(sampler2D(baseColorTex, linearWrapSampler), uv);
+  s.baseColor = d.vertexColor0.rgb * color.rgb;
+  s.alpha = color.a * d.vertexColor0.a;
+
+  // Sample and apply ORM texture with additional adjustments
+  vec3 orm = texture(sampler2D(occlusionRoughnessMetalnessTex, linearWrapSampler), uv).rgb;
+  s.occlusion = orm.r * matParams.occlusionAmount;
+  s.roughness = orm.g * matParams.roughnessAmount;
+  s.metallic = orm.b * matParams.metalnessAmount;
+
+  // Apply Normal Map
+  vec4 normalSample = texture(sampler2D(normalTex, linearWrapSampler), uv);
+  s.tangentSpaceNormal = unpackNormalRGB(normalSample);
+  s.tangentSpaceNormal.xy *= matParams.normalStrength;
+}
+
+END_SURFACE

@@ -1,0 +1,26 @@
+BEGIN_SUBSHADERS
+  "meta/shaderkit@stackables/option_lit_skinned.surface"
+  "meta/shaderkit@stackables/texcoord0_scale_offset.surface"
+  "meta/shaderkit@stackables/layer_sample_color_texture.surface"
+  "meta/shaderkit@stackables/layer_sample_pbr_orm.surface"
+  "meta/shaderkit@stackables/layer_set_result.surface"
+END_SUBSHADERS
+
+BEGIN_PROPERTIES
+  normalMap("Normal Map", 2D) = "normal"
+END_PROPERTIES
+
+BEGIN_DESCRIPTION
+Like isotropic (CR MEO), but with a normal map.
+END_DESCRIPTION
+
+BEGIN_SURFACE
+
+// ----------------------------------------------------------------------------
+void surfaceFunction(inout Surface s, SurfaceData d)
+{
+  vec4 tn = texture(sampler2D(normalMap, linearWrapSampler), d.texcoord0);
+  s.tangentSpaceNormal = unpackNormalRGB(tn);
+}
+
+END_SURFACE

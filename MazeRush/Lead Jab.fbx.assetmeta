@@ -1,0 +1,695 @@
+{
+    "class": "horizon::AssetMetadata",
+    "version": 1,
+    "data": {
+        "id": "17049081258416977013",
+        "pipelineVersion": 1,
+        "assetBuilderSettings": [
+            {
+                "class": "horizon::DccTemplateAssetBuilderSettings",
+                "version": 10006,
+                "data": {
+                    "target": "template",
+                    "sceneCollisionLayer": "Layer2",
+                    "collisionShape": "TriangleMesh",
+                    "retainAllTransforms": false,
+                    "usePackageNameInIds": false,
+                    "templateRootName": "Lead Jab",
+                    "retainAllTransformsFixVersion": 2,
+                    "hiddenSceneItemsFixVersion": 1
+                }
+            },
+            {
+                "class": "horizon::dcc_asset_processing::DccSceneAssetBuilderSettings",
+                "version": 10009,
+                "data": {
+                    "target": "",
+                    "sourceCoordinateSystem": "RightUpBackward",
+                    "orientationCoordinateSystem": "YUp-RightHanded",
+                    "useNamedBasedLODs": false,
+                    "upsideDownV": false,
+                    "useGlobalScale": true,
+                    "globalScale": 1.0,
+                    "enableAssetReferencing": true,
+                    "importAssetReferencingVersion": 1,
+                    "enableLegacyMaterialConversion": false,
+                    "materialConversionVersion": 1,
+                    "enableFbxUnitConversionAlways": true,
+                    "importErrorHandlingBehavior": 1
+                }
+            },
+            {
+                "class": "horizon::animation_hzanim::SceneToHzAnimAssetBuilderSettings",
+                "version": 10005,
+                "data": {
+                    "target": "hzanim_anim",
+                    "animationSettingsList": [
+                        {
+                            "class": "horizon::animation_hzanim::SceneToHzAnimAssetBuilderAnimationSettings",
+                            "version": 10002,
+                            "data": {
+                                "animationName": "mixamo.com",
+                                "exportedJoints": [],
+                                "isAdditive": false,
+                                "eventTracks": [],
+                                "intentionalityPreset": "Default"
+                            }
+                        }
+                    ],
+                    "skeletonTarget": "",
+                    "skeletonSource": "MetaAvatarV1"
+                }
+            },
+            {
+                "class": "horizon::renderer::tool::MeshAssetBuilderSettings",
+                "version": 10002,
+                "data": {
+                    "target": "mesh",
+                    "lightmapTextureTarget": "",
+                    "materialMapTarget": "materialMap.json",
+                    "streamable": false,
+                    "streamCount": 2,
+                    "instanceGroupID": 0,
+                    "flipBitangent": false,
+                    "meshSettingsList": [
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/body_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 2709261579
+                                    },
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 347269462
+                                    },
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 693613862
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 2709261579
+                                        }
+                                    },
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 347269462
+                                        }
+                                    },
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 693613862
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/brow_left_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 299818780
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 299818780
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/brow_right_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 299818780
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 299818780
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/coilyshortcrewcut_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 299818780
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 299818780
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/eye_l_ply",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 806204707
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 806204707
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/eye_r_ply",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 806204707
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 806204707
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/lash_left_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 299818780
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 299818780
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/lash_right_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 299818780
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 299818780
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "class": "horizon::renderer::tool::MeshAssetBuilderMeshSettings",
+                            "version": 10002,
+                            "data": {
+                                "nodePath": "/RootNode/geom/mouth_geometry",
+                                "lightmapTextureTarget": "",
+                                "shouldParameterizeLightMapTexture": false,
+                                "cullFinalLod": false,
+                                "lodSelectionMetric": "Screen Space Ratio",
+                                "lodSettings": [
+                                    {
+                                        "class": "horizon::renderer::tool::LodSettings",
+                                        "data": {
+                                            "distanceRatio": 0.20000000298023225,
+                                            "reductionFactor": 1.0,
+                                            "targetError": 0.0,
+                                            "simplifyProfile": "Optimized",
+                                            "simplifyParams": {
+                                                "class": "horizon::renderer::tool::SimplifyParams",
+                                                "data": {
+                                                    "allowCollapseAcrossSharpEdges": false,
+                                                    "allowCollapseSmallBoundaries": false,
+                                                    "allowRemoveSmallGeometry": false,
+                                                    "smallGeometryRemovalThresholdRatio": 0.0,
+                                                    "smallGeometryMinFaceCount": 0,
+                                                    "scaleCostByTriangleArea": false,
+                                                    "weldEdges": false,
+                                                    "repairMesh": false
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "vertexStrippingConfig": {
+                                    "class": "horizon::renderer::tool::VertexStrippingConfig",
+                                    "data": {
+                                        "normals": "Automatic",
+                                        "texcoord0": "Automatic",
+                                        "texcoord1": "Automatic",
+                                        "texcoord2": "Automatic",
+                                        "texcoord3": "Automatic",
+                                        "vertexColor0": "Automatic",
+                                        "vertexColor1": "Automatic"
+                                    }
+                                },
+                                "materials": [
+                                    {
+                                        "packageOrRemoteId": "8005784934535184543",
+                                        "ingestionId": "17049081258416977013",
+                                        "targetId": 3382141833
+                                    }
+                                ],
+                                "originalMaterials": [
+                                    {
+                                        "class": "horizon::AssetId",
+                                        "data": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 3382141833
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "class": "horizon::physics::PhysXConvexMeshAssetBuilderSettings",
+                "version": 10001,
+                "data": {
+                    "target": "phys_convex_mesh",
+                    "maxNumConvexHulls": 1,
+                    "maxNumVertsPerConvexHull": 128,
+                    "voxelResolution": 400000,
+                    "allowedVolumeErrorPercentage": 1.0,
+                    "recursionDepth": 10,
+                    "minEdgeLength": 2
+                }
+            }
+        ]
+    }
+}

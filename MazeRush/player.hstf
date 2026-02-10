@@ -8,7 +8,7 @@
                 {
                     "data": {
                         "class": "horizon::platform_api::PlayerPlatformComponent",
-                        "version": 10,
+                        "version": 11,
                         "data": {}
                     },
                     "dataType": "horizon::DataDefinitionAsset"
@@ -33,7 +33,207 @@
                     "data": {
                         "class": "horizon::platform_api::AvatarAnimatorPlatformComponent",
                         "version": 1,
+                        "data": {
+                            "animationList": [
+                                {
+                                    "class": "horizon::avatar_ugc::AvatarAnimation",
+                                    "data": {
+                                        "name": "Damage",
+                                        "animation": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "10803993112874106122",
+                                            "targetId": 3596134716
+                                        }
+                                    }
+                                },
+                                {
+                                    "class": "horizon::avatar_ugc::AvatarAnimation",
+                                    "data": {
+                                        "name": "Jab",
+                                        "animation": {
+                                            "packageOrRemoteId": "8005784934535184543",
+                                            "ingestionId": "17049081258416977013",
+                                            "targetId": 3596134716
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::light_baker::LightBakerPlatformComponent",
                         "data": {}
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "PlayerManager",
+                        "definitionAsset": {
+                            "packageOrRemoteId": "8005784934535184543",
+                            "ingestionId": "5607820917821264063",
+                            "targetId": 4237980480
+                        },
+                        "data": {
+                            "inputVisualConfigAsset": {
+                                "packageOrRemoteId": "24125043817166625",
+                                "ingestionId": "5259806240910938477",
+                                "targetId": 1558579717
+                            },
+                            "attackEntity": "39214060-431d-4bc2-805e-8420ca260e4a"
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                }
+            ],
+            "attributes": []
+        },
+        {
+            "id": "39214060-431d-4bc2-805e-8420ca260e4a",
+            "name": "Cube",
+            "components": [
+                {
+                    "data": {
+                        "class": "horizon::platform_api::TransformPlatformComponent",
+                        "version": 2,
+                        "data": {
+                            "localPosition": {
+                                "x": 0.0,
+                                "y": 1.2999999523162842,
+                                "z": -1.0
+                            },
+                            "localScale": {
+                                "x": 0.30000001192092898,
+                                "y": 0.30000001192092898,
+                                "z": 1.0
+                            }
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::MeshPlatformComponent",
+                        "version": 11,
+                        "data": {
+                            "mesh": {
+                                "packageOrRemoteId": "24407058055595655",
+                                "ingestionId": "4707432788469128401",
+                                "targetId": 931111888
+                            },
+                            "isVisibleSelf": false
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::ColliderBoxPlatformComponent",
+                        "version": 1,
+                        "data": {}
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::PhysicsBodyPlatformComponent",
+                        "version": 6,
+                        "data": {
+                            "type": "Trigger"
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::ColorPlatformComponent",
+                        "version": 2,
+                        "data": {
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0,
+                                "a": 1.0
+                            }
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "AttackColl",
+                        "definitionAsset": {
+                            "packageOrRemoteId": "8005784934535184543",
+                            "ingestionId": "1876316582225491956",
+                            "targetId": 4237980480
+                        },
+                        "data": {}
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                }
+            ],
+            "attributes": [
+                {
+                    "class": "horizon::NetworkableTemplateEntityAttribute",
+                    "data": {
+                        "isNetworkable": true
+                    }
+                }
+            ]
+        },
+        {
+            "id": "893bc656-ccf0-4367-8c75-77990ff4081a",
+            "name": "Cube(1)",
+            "components": [
+                {
+                    "data": {
+                        "class": "horizon::platform_api::TransformPlatformComponent",
+                        "version": 2,
+                        "data": {
+                            "localPosition": {
+                                "x": 0.0,
+                                "y": 1.0,
+                                "z": 0.0
+                            },
+                            "localScale": {
+                                "x": 0.5,
+                                "y": 2.0,
+                                "z": 0.5
+                            }
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::MeshPlatformComponent",
+                        "version": 11,
+                        "data": {
+                            "mesh": {
+                                "packageOrRemoteId": "24407058055595655",
+                                "ingestionId": "4707432788469128401",
+                                "targetId": 931111888
+                            },
+                            "isVisibleSelf": false
+                        }
+                    },
+                    "dataType": "horizon::DataDefinitionAsset"
+                },
+                {
+                    "data": {
+                        "class": "horizon::platform_api::ColorPlatformComponent",
+                        "version": 2,
+                        "data": {
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0,
+                                "a": 1.0
+                            }
+                        }
                     },
                     "dataType": "horizon::DataDefinitionAsset"
                 }
@@ -41,5 +241,16 @@
             "attributes": []
         }
     ],
-    "relationships": []
+    "relationships": [
+        {
+            "relationshipType": "RelationChildOf",
+            "source": "39214060-431d-4bc2-805e-8420ca260e4a",
+            "destination": "ec859a24-a822-40de-a86c-817ae089c7b4"
+        },
+        {
+            "relationshipType": "RelationChildOf",
+            "source": "893bc656-ccf0-4367-8c75-77990ff4081a",
+            "destination": "ec859a24-a822-40de-a86c-817ae089c7b4"
+        }
+    ]
 }
