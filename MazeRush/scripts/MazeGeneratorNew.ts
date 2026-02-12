@@ -1685,12 +1685,12 @@ export class MazeGeneratorNew extends Component {
         //const wall = this.horizontalWallsEnt?.children.get();
         const pos = new Vec3(x * cs, 0, y * cs).add(origin).add(new Vec3(cs / 2, 0, 0));
         const childAtIndex = wall?.[hWallIndex].getComponent(MeshComponent);
-        //const childAtIndexcol = wall?.[hWallIndex].getComponent(ColliderComponent);
+        const childAtIndexcol = wall?.[hWallIndex].getComponent(PhysicsBodyComponent);
         hWallIndex++;
-        if (childAtIndex ) {
+        if (childAtIndex &&childAtIndexcol ) {
           childAtIndex.isVisibleSelf = (horizontalWalls[x][y] === WallType.Normal);
-          //if((horizontalWalls[x][y] === WallType.Normal))
-            //childAtIndexcol.collisionLayer = 2;
+          childAtIndexcol.collisionEnabled = (horizontalWalls[x][y] === WallType.Normal);
+            
         }
 
         /*if (type === WallType.Moving || type === WallType.MgReovinv) 
@@ -1728,13 +1728,15 @@ export class MazeGeneratorNew extends Component {
         const wall = this.verticalWalls?.getChildren();
         //const wall = this.verticalWallsEnt?.children.get();
         const childAtIndex = wall?.[vWallIndex].getComponent(MeshComponent);
+        const childAtIndexcol = wall?.[vWallIndex].getComponent(PhysicsBodyComponent);
        
         const pos = new Vec3(x * cs, 0, y * cs).add(origin).add(new Vec3(0, 0, cs / 2));
         vWallIndex++;
-        if (childAtIndex ) {
+        if (childAtIndex &&childAtIndexcol ) 
+        {
           childAtIndex.isVisibleSelf = (verticalWalls[x][y] === WallType.Normal);
-          // if(verticalWalls[x][y] === WallType.Normal)
-          // childAtIndexCol.collisionLayer =2;
+          childAtIndexcol.collisionEnabled = (verticalWalls[x][y] === WallType.Normal);
+         
         }
         //if (!wall) continue;
         /*if (type === WallType.Moving ||type === WallType.MovingRev ) {
